@@ -50,6 +50,13 @@ Given an optional width and an optional height of a rectangle, write code that c
 ```swift
 var width: Double?
 var height: Double?
+
+if let unwrappedWidth = width,
+    let unWrappedHeight = height {
+        print(unwrappedWidth * unWrappedHeight)
+} else {
+    print("no width and/or height found")
+}
 ```
 
 
