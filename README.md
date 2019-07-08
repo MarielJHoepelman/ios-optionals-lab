@@ -143,10 +143,17 @@ if let tuple = tuple {
 Write code that either doubles `myInt` and then prints it, or prints an error message if myInt is nil.
 
 ```swift
-let myInt: Int?
+var myInt: Int?
 if Bool.random() {
- myInt = 5
+    myInt = 5
 }
+
+if let myInt = myInt {
+    print(myInt)
+} else {
+    print("Error: value is nil!")
+}
+//note to self: var myInt changed by Ben from let to var due to initialization error.
 ```
 
 
