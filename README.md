@@ -93,6 +93,10 @@ var lastName: String = "Stone"
 Write code that adds 15 to `myIntString`, then prints the sum. Use the `Int()` constructor which returns an optional Int `(Int?)`.
 
 `let myIntString = "35"`
+```swift
+var sum = (Int(myIntString)! + 15)
+print(sum)
+```
 
 
 ## Question 7
