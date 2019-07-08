@@ -68,6 +68,12 @@ Given the following optional variables `name`, `age` and `height`. Write code so
 var name: String?
 var age: Int?
 var height: Double?
+
+if let name = name, let age = age, let height = height {
+    print(name, age, height)
+} else {
+    print("Error: at least one variable is nil")
+}
 ```
 
 
