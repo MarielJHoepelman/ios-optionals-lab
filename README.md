@@ -10,10 +10,26 @@ Fork and clone this repo. On your fork, answer and commit the follow questions. 
 Write 3 different ways of safely unwrapping and printing the value of `userName`.  If it is nil, print "No name".
 
 - Method one: Check for nil and force unwrap
-
+```swift
+if userName != nil {
+    print(userName)
+} else {
+    print("No name")
+}
+```
 - Method two: Optional binding
-
+```swift
+if let userName = userName {
+    print(userName)
+} else {
+    print("No name")
+}
+```
 - Method three: Nil coalescing
+```swift
+var unwrappedUserName = userName ?? "No name"
+print(unwrappedUserName)
+```
 
 
 ## Question 2
