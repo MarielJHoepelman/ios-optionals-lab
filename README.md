@@ -168,6 +168,13 @@ let doubleTwo: Double = 5
 if Bool.random() {
  myDouble = 12
 }
+
+
+if let unwrappedmyDouble = myDouble {
+    print(unwrappedmyDouble * doubleTwo)
+} else {
+    print("Error: myDouble is nil")
+}
 ```
 
 
