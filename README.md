@@ -85,6 +85,14 @@ Given the variables `firstName`, `middleName` and `lastName`. Create a variable 
 var firstName: String = "Johnny"
 var middleName: String?
 var lastName: String = "Stone"
+
+if let middleName = middleName {
+    print(middleName)
+} else {
+    middleName = ""
+}
+var fullName = print("The name is \(firstName)\(String(describing: middleName!)) \(lastName).")
+//Note to self: refactor this!
 ```
 
 
