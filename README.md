@@ -191,11 +191,10 @@ if Bool.random() {
 
 
 if isTheGreatest != nil {
-    true
+    isTheGreatest = true
 } else {
     isTheGreatest = false
 }
-//not sure understood question correcty.
 ```
 
 
