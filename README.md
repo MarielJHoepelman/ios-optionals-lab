@@ -279,6 +279,12 @@ var numberOfPeople: Int?
 if Bool.random() {
  numberOfPeople = 108
 }
+
+if let numberOfPeople = numberOfPeople {
+    if numberOfPeople % 2 == 0 {
+        print(numberOfPeople)
+    }
+}
 ```
 
 
