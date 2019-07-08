@@ -129,6 +129,12 @@ var tuple: (Int, Int)?
 if Bool.random() {
  tuple = (5, 3)
 }
+
+if let tuple = tuple {
+    print(tuple)
+} else {
+    print("Error: value is nil!")
+}
 ```
 
 
