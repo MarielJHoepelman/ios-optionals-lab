@@ -37,6 +37,10 @@ print(unwrappedUserName)
 Given optional string `backgroundColor`, write code that safely unwraps and prints it. If backgroundColor is nil, give it a value.
 
 `var backgroundColor: String?`
+```swift
+var unwrappedBackgroundColor = backgroundColor ?? "Black"
+print(unwrappedBackgroundColor)
+```
 
 
 ## Question 3
