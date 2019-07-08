@@ -188,6 +188,14 @@ var isTheGreatest: Bool?
 if Bool.random() {
  isTheGreatest = true
 }
+
+
+if isTheGreatest != nil {
+    true
+} else {
+    isTheGreatest = false
+}
+//not sure understood question correcty.
 ```
 
 
