@@ -374,6 +374,22 @@ Some students were asked some questions about their favorite foods and colors an
 
 `let studentInfo: [(String, String?, String?)] = [("Bill", "Burgers", "Blue"), ("Rita", nil, "Red"), ("Peter", "Pizza", "Purple"), ("Sarah", "Sandwiches", nil), ("Jeff", nil, nil), ("Lucy", "Leftovers", "Lilac"), ("Mike", "Meat", "Mauve"), ("Gemma", nil, "Green")]`
 
+```swift
+for student in studentInfo where student.2 == nil {
+    print(student.0)
+}
+
+for student in studentInfo where student.2 == nil ||  student.1 == nil {
+    print(student.0)
+}
+
+var newStudents: [(String, String, String)] = []
+for student in studentInfo where student.1 != nil && student.2 != nil {
+    newStudents.append(student as! (String, String, String))
+}
+print(newStudents)
+```
+
 
 ## Question 20
 
