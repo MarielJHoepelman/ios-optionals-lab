@@ -421,6 +421,19 @@ Consider the following nested optional. It corresponds to a number inside a box 
 
 `let number: Int??? = 10`
 
+```swift
+let number: Int??? = 10
+print(number!!!)
+
+if let number = number {
+    if let number = number {
+        if let number = number {
+            print(number)
+        }
+    }
+}
+```
+
 
 ## Question 22
 
