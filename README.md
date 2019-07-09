@@ -298,6 +298,14 @@ var someNumbers: [Int?] = []
 for i in 0..<20 {
     someNumbers.append(Bool.random() ? i : nil)
 }
+
+var product = 1
+    for n in someNumbers {
+        if n != nil {
+            product = n! * product
+        }
+}
+print(product)
 ```
 
 
