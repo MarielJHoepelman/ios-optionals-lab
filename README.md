@@ -317,6 +317,13 @@ Given the array `poorlyFormattedCityNames`, create a new array with the city nam
 let poorlyFormattedCityNames: [String?] = ["new york", "BOSTON", nil, "chicago", nil, "los angeles", nil, "Dallas",]
 
 Output: ["New York", "Boston", "Chicago", "Los Angeles", "Dallas"]
+
+var cityNames: [String] = []
+
+for city in poorlyFormattedCityNames where city != nil {
+    cityNames.append(city!.lowercased().capitalized)
+    }
+print(cityNames)
 ```
 
 
