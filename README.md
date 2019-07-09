@@ -333,10 +333,16 @@ Given a random array of optional numbers, create a new array of all the even num
 
 ```swift
 var aBunchOfNumbers: [Int?] = []
+var noNilEvenNumbers: [Int] = []
 
 for _ in 0..<20 {
- aBunchOfNumbers.append(Bool.random() ? Int(arc4random_uniform(102)) : nil)
+    aBunchOfNumbers.append(Bool.random() ? Int(arc4random_uniform(102)) : nil)
 }
+
+for n in aBunchOfNumbers where n != nil && n! % 2 == 0 {
+    noNilEvenNumbers.append(n!)
+}
+print(noNilEvenNumbers)
 ```
 
 
