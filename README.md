@@ -351,7 +351,14 @@ print(noNilEvenNumbers)
 Given the following array of zip codes as strings, write code that turns them into an array of Ints.
 
 `let zipCodeStrings = ["11377", "11101", "11373", "10014", "10003", "11223"]`
+```swift
+var arrayOfZipCodes: [Int] = []
 
+for zip in zipCodeStrings {
+    arrayOfZipCodes.append(Int(zip)!)
+}
+print(arrayOfZipCodes)
+```
 
 ## Question 19
 
