@@ -86,13 +86,15 @@ var firstName: String = "Johnny"
 var middleName: String?
 var lastName: String = "Stone"
 
+var fullName: String // Declare fullName as an empty string
+
+fullName = firstName // Assign the firstName to the fullName to start concatenating
+
 if let middleName = middleName {
-    print(middleName)
-} else {
-    middleName = ""
+    fullName = fullName + " " + middleName // Safely add middleName if exists
 }
-var fullName = print("The name is \(firstName)\(String(describing: middleName!)) \(lastName).")
-//Note to self: refactor this!
+fullName = fullName + " " + lastName
+print(fullName)
 ```
 
 
