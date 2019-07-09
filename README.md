@@ -401,6 +401,15 @@ Given an optional array of optional tuples of optional UInt8s,
 
 `let possibleColors: [(r: UInt8?, g: UInt8?, b: UInt8?)?]? = [(128, 21, 7), (0, 0, 0), nil, (nil, 25, 82), (255, 255, 255), nil, (200, 100, nil), (120, nil, 23), (0, 255, 106), (nil, nil, nil), nil, (100, 100, 200)]`
 
+```swift
+var newArr: [(r: UInt8, g: UInt8, b: UInt8)] = []
+
+for color in possibleColors! where color?.0 != nil && color?.1 != nil &&    color?.2 != nil {
+    newArr.append(color as! (r: UInt8, g: UInt8, b: UInt8))
+}
+print(newArr)
+```
+
 
 ## Question 21
 
